@@ -1,0 +1,14 @@
+Elementos para formatação de data
+
+YYYY é ano completo em números
+YEAR é ano escrito por extenso
+MM é mês em dois dígitos
+MONTH é mês escrito por extenso
+MON é mês escrito com as 3 primeiras letras iniciais
+DY é dia escrito com a abreviação em 3 letras
+DAY é dia escrito por extenso
+DD é dia em dois dígitos
+D é dia da semana O código abaixo de 1 a 7.
+DDD é dia do ano O código abaixo de 1 a 356.
+WW é número da semana dentro do ano
+W é número da semana dentro do mês

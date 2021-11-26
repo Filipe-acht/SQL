@@ -1,0 +1,5 @@
+--UPPER : Retorna a coluna toda em Maiúsculo.
+
+SELECT UPPER(A.DESCRICAO,1,6) NOME
+FROM AUTOR A
+WHERE A.IDAUTOR = 1

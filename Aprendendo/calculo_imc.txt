@@ -1,0 +1,8 @@
+let v_peso = parseFloat($v('P_PESO').replace(/,/g,'.'));
+let v_estatura = parseFloat($v('P_ESTATURA').replace(/,/g,'.'));
+
+if (v_peso && v_estatura) {
+  let v_imc = Math.round((v_peso / Math.pow(v_estatura,2)) * 100) / 100;
+  //console.log(v_imc);
+  $s('P_IMC', (''+v_imc).replace(/\./g,','));
+}

@@ -1,0 +1,105 @@
+Banco de Dados Relacional:
+	* Coleção de objetos e relações;
+	* Conjunto de operadores para atuar sobre os obejetos e relações;
+	* Deve garantir a integridade dos dados.
+** é uma coleção de relações entre duas tabelas de duas dimensões:
+	* linhas e colunas;
+	* as tabelas podem se relacionar entre si;
+
+Shema HR:
+	* Departmentes;
+	* Locations;
+	* Job_history;
+	* Employees;
+	* Countries;
+	* Regions;
+	* Jobs.
+	
+Variável de substituição:
+	* & pede o valor sempre que executado;
+	* && pede apenas na primeira execução.
+	
+Funções Single-Row:
+	* LOWER;
+	* UPPER;
+	* INITCAP;
+	* CONCAT;
+	* SUBSTR;
+	* LENGTH;
+	* INSTR;
+	* LPAD;
+	* RPAD;
+	* REPLACE;
+	* TRIM;
+	* RTRIM;
+	* LTRIM.
+	
+Funções Tipo Number:
+	* ROUND;
+	* TRUNC;
+	* MOD;
+	* ABS;
+	* SQRT;
+	
+Funções Tipo Date:
+	* MONTHS_BETWEEN;
+	* ADD_MONTHS;
+	* NEXT_DAY;
+	* LAST_DAY;
+	* ROUND;
+	* TRUNC;
+
+Funções de Conversões:
+	* TO_DATE;
+	* TO_CHAR;
+	* TO_NUMBER;
+	
+Funções Genéricas:
+	* NVL;
+	* NVL2;
+	* NULLIF;
+	* COALESCE;
+	
+Funções de Grupo: [ignoram valores nulos]
+	* AVG - com dados numéricos;
+	* COUNT - retorna o número de linhas[count(distinct expr)];
+	* MAX - com dados numéricos, caracteres e datas;
+	* MIN - com dados numéricos, caracteres e datas;
+	* SUM - com dados numéricos;
+	* STDDEV;
+	* VARIANCE;
+Expressões Condicionais:
+	* CASE-WHEN-ELSE-THEN-RETURN-END alias;
+	* DECODE;
+	
+Criando grupos com GROUP BY:
+	* select coluna1, função_grupo(coluna)
+	  from tabela
+	  [where condição]
+	   ou 
+	  [having condição de grupos]
+	  [group by expressão_group_by]
+	  [order by coluna]
+	* Resolve 1 - WHERE
+			, 2 - GROUP BY
+			, 3 -  HAVING
+			, 4 - SELECT/ORDER BY
+	* Utilizar a cláusula HAVING para restringir grupos, não o WHERE
+	* Aninhando função de grupo:
+		 - select max(avg(salary) from dual;
+
+NONEQUIJOIN - é realizado um join quando a condição de ligação não é uma condição de igualdade;
+INNER JOIN  - retorna somente as linhas onde a condição de ligação coincidem;
+Produto Cartesiano - é um join de uma tabela: que pra cada linha da tabela x, combinamos com todas as linhas da tabela y, e pada cada linha de y com todas as da tabela x(n para n);
+CROSS JOIN  - produz um produto Cartesiano;
+
+* MINUS, UNION, UNION ALL e MINUS;
+* SAVEPOINT - marcador de transação;
+* ROLLBACK TO SAVEPOINT <nome>;
+
+TABELAS TEMPORÁRIAS: 
+		* podemos executar qualquer comando DML ou SELECT
+		* pode ter indices, constraints e triggers
+		* pode ser referenciada nas visões, sinônimos ou fazer join com outras tabelas
+		
+		*** diferenças: seus dados são temporários e privados para a sessão

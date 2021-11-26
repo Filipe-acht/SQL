@@ -1,0 +1,25 @@
+/*
+	Expressões regulares:
+		* . -> 1 caractere curinga: .oje, f.
+		* [] -> lista de caracteres: n[aã]o = não, f[ili]pe
+		* [^] -> lista negada de caracteres: [^A-Z] aBcDe = ace
+		* ? -> 0 ou 1 caractere(opcional)
+		* * 0 -> ou mais caracteres
+		* + -> 1 ou mais caracteres
+		* {} -> numero exato, minimo, máximo ou intervalo númerico: {minimo, maximo}
+		* ^ -> casa com o começo da linha(colocado no inicio da ER)
+		* $ -> casa com o fim da linha(colocado no final da ER)
+		* \ -> escapa um metacaractere
+		* | -> indica alternativas 
+		* () -> agrupa metacaracteres
+	====== Classes Posix ======
+		* [:upper:] -> letras maiusculas + acentos
+		* [:lower:] -> letras minusculas + acentos
+		* [:alpha:] -> maiusculas/minusculas + acentos
+		* [:alnum:] -> letras e numeros + acentos
+		* [:digit:] -> numeros: [[:digit:]]
+		* [:punct:] -> sinais de pontuacao
+		* [:space:] -> caracteres em branco
+		* [:cntrl:] -> caracteres de controle
+*/
+

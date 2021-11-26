@@ -1,0 +1,17 @@
+CREATE TABLE <table>(
+       ID INT NOT NULL,
+       NAME VARCHAR2(50)
+       CONSTRAINT cust_null NULL
+);
+
+CREATE TABLE <table>(
+       ID NUMBER NOT NULL,
+       CPF NUMBER NOT NULL,
+       NAME VARCHAR2(50),
+       CONSTRAINT pk_teste PRIMARY KEY (ID, CPF)
+);
+
+CREATE TABLE <table>(
+       ID NUMBER NOT NULL CHECK(ID > 0),
+       NAME VARCHAR2(50)
+);
