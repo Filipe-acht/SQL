@@ -1,0 +1,16 @@
+
+SELECT numero
+FROM 
+	  teste_asof AS OF TIMESTAMP TO_TIMESTAMP('2022-04-12 09:19:00', 'YYYY-MM-DD HH24:MI:SS')
+WHERE 1 = 1
+  AND numero = 2;
+  
+/*
+	SINTAXE:
+	
+	SELECT campos
+	FROM 
+		<owner>.<tabela> AS OF TIMESTAMP TO_TIMESTAMP('2022-04-12 09:19:00', 'YYYY-MM-DD HH24:MI:SS')
+	WHER 1 = 1
+ 	 AND...
+*/
